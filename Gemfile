@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
+
 # Use sqlite3 as the database for development and test
 gem 'sqlite3', group: [:development, :test]
 
@@ -11,6 +12,9 @@ gem 'pg', group: :production
 
 # Add 12 factor for Heroku
 gem 'rails_12factor', group: :production
+
+# Use bootstrap for improving the look and feel
+gem 'bootstrap-sass'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
