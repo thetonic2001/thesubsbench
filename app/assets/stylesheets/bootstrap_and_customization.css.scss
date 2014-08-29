@@ -1,2 +1,16 @@
 @import 'bootstrap-sprockets';
-@import 'bootstrap'
+@import 'bootstrap';
+
+.navbar {
+	background-color: #287ef7;
+	color: white;
+	height: 75px;
+}
+
+.navbar .navbar-brand, .navbar .navbar-nav>li>a { 
+	color: white;
+}
+
+.navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus { 
+	background-color: #69FAFF
+}
