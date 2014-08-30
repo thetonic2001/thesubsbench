@@ -3,5 +3,8 @@ class PagesController < ApplicationController
 	end
 
 	def about
+	end
+
+	def whatsnew
 	end 
 end
