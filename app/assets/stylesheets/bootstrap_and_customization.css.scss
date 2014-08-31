@@ -12,5 +12,24 @@
 }
 
 .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus { 
-	background-color: #69FAFF
+	background-color: #69FAFF;
+}
+
+.navbar .navbar-nav>.active>a,.navbar .navbar-nav>.open>a,
+.navbar .navbar-nav>.open>a, 
+.navbar .navbar-nav>.open>a:hover,
+.navbar .navbar-nav>.open>a, 
+.navbar .navbar-nav>.open>a:hover, 
+.navbar .navbar-nav>.open>a:focus { 
+	background-color:  #287ef7;
+	color: white; }
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { 
+	background-color: #287ef7;
+	color: white; 
+}
+
+.navbar-nav>li {
+	padding: 0 10px 0 10px;
+	text-align: center;
 }
