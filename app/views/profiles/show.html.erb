@@ -2,4 +2,32 @@
 	<h1><%= @user.full_name %></h1>
 	<p><strong>Age: </strong><%= @user.age %></p>
 	<p><strong>Gender: </strong><%= @user.gender %></p>
+
+	<!--Social links -->
+	<% unless @user.youtube.blank? %>
+          <%= link_to "http://www.youtube.com/user/#{@user.youtube}", target: "_blank" do %>
+            <i class="fa fa-youtube"></i>
+          <% end %>
+        <% end %>
+        <% unless @user.twitter.blank? %>
+          <%= link_to "http://www.twitter.com/#{@user.twitter}", target: "_blank" do %>
+            <i class="fa fa-twitter"></i>
+          <% end %>
+        <% end %>
+        <% unless @user.facebook.blank? %>
+          <%= link_to "http://www.facebook.com/#{@user.facebook}", target: "_blank" do %>
+            <i class="fa fa-facebook-square"></i>
+          <% end %>
+        <% end %>
+        <% unless @user.vine.blank? %>
+          <%= link_to "http://#{@user.vine}", target: "_blank" do %>
+            <i class="fa fa-vine"></i>
+          <% end %>
+        <% end %>
+        <% unless @user.instagram.blank? %>
+          <%= link_to "http://www.instagram.com/#{@user.instagram}", target: "_blank" do %>
+            <i class="fa fa-instagram"></i>
+          <% end %>
+        <% end %>
+  <!-- End Social Links -->
 </div>
