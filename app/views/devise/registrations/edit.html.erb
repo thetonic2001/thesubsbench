@@ -15,8 +15,8 @@
   <div><%= f.label :profile_name %><br />
   <%= f.text_field :profile_name %></div>
 
-  <%= f.label :date_of_birth %><br />
-    <%= f.date_select :date_of_birth, :order => [:day, :month, :year], :start_year=>1900 %>
+  <div><%= f.label :date_of_birth %><br />
+    <%= f.date_select :date_of_birth, :order => [:day, :month, :year], :start_year=>1900 %></div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
