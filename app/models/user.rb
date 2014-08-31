@@ -12,7 +12,11 @@ validates :profile_name, presence: true,
 						 	message: 'must be formatted correctly.'
 						 }
 
-                           
+        
+        def to_param
+	profile_name
+end
+                   
   def full_name
 		first_name + " " + last_name
 	end
