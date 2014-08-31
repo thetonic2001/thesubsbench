@@ -15,6 +15,9 @@
   <div><%= f.label :profile_name %><br />
   <%= f.text_field :profile_name %></div>
 
+  <div><%= f.label :gender %><br />
+  <%= f.select :gender, ['Male', 'Female'] %></div>
+
   <div><%= f.label :date_of_birth %><br />
     <%= f.date_select :date_of_birth, :order => [:day, :month, :year], :start_year=>1900 %></div>
 
