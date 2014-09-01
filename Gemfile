@@ -22,6 +22,9 @@ gem 'devise'
 # Added simple form
 gem 'simple_form'
 
+# Added paperclip for pictures
+gem 'paperclip'
+
 # Install font-awesome
 gem 'font-awesome-sass'
 

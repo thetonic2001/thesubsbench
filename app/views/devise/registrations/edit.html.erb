@@ -28,7 +28,20 @@
 
   <div><%= f.input :instagram %></div>
 
+  <fieldset>
+    <legend>Profile Picture</legend>
+    <%= f.input :avatar, as: :file %>
+    <% if f.object.avatar? %>
+      <div class="control-group">
+        <label class="control-label">Current avatar</label>
+        <div class="controls">
+          <%= image_tag f.object.avatar.url %>
+        </div>
+      </div>
+    <% end %>
+  </fieldset>
 
+<%= f.check_box(:delete_image) %>Delete avatar<br/> 
 
             <div class="form-group">
         <%= f.label :vine %>
