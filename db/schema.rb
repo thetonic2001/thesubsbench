@@ -46,18 +46,6 @@ ActiveRecord::Schema.define(version: 20140902104953) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
-  create_table "documents", force: true do |t|
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "attachment_file_name"
-    t.string   "attachment_content_type"
-    t.integer  "attachment_file_size"
-    t.datetime "attachment_updated_at"
-  end
-
-  add_index "documents", ["user_id"], name: "index_documents_on_user_id"
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -75,7 +63,6 @@ ActiveRecord::Schema.define(version: 20140902104953) do
     t.string   "last_name"
     t.string   "profile_name"
     t.date     "date_of_birth"
-    t.string   "user_country"
     t.string   "gender"
     t.string   "facebook"
     t.string   "twitter"
