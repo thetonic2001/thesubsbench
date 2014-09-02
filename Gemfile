@@ -17,7 +17,7 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass'
 
 # Added devise for users
-gem 'devise'
+gem 'devise', '~> 3.2'
 
 # Added simple form
 gem 'simple_form'
