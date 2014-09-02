@@ -25,6 +25,9 @@ gem 'simple_form'
 # Added paperclip for pictures
 gem 'paperclip'
 
+# Add activeAdmin to generate an admin interface
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 # Install font-awesome
 gem 'font-awesome-sass'
 
