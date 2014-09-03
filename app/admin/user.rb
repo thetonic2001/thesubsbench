@@ -1,5 +1,8 @@
 ActiveAdmin.register User do
 
+# Update permit_params to allow admin to edit these attributes for a user
+permit_params :email, :password, :password_confirmation, :twitter
+
   before_filter do
   User.class_eval do
      def to_param
