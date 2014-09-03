@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get "about" => "pages#about"
   get "whatsnew" => "pages#whatsnew"
+  get "tv-info" => "pages#tv_info"
 
   scope ":profile_name" do
   end

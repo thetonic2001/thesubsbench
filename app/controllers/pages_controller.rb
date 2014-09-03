@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
 	def whatsnew
 	end 
+
+	def tv_info
+	end
 end
