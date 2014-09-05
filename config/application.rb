@@ -22,5 +22,8 @@ module Thesubsbench
 
     # Required for Heroku
     config.assets.initialize_on_precompile = false
+
+    # Needed to fix activeAdmin adjustment to scaffolding
+    config.app_generators.scaffold_controller = :scaffold_controller
   end
 end
