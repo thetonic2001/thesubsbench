@@ -5,6 +5,8 @@ class TvChannelsController < ApplicationController
   # GET /tv_channels.json
   def index
     @tv_channels = TvChannel.all
+    @sd_channels = TvChannel.where(hd: false)
+    @hd_channels = TvChannel.where(hd: true)
   end
 
   # GET /tv_channels/1
@@ -69,6 +71,6 @@ class TvChannelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tv_channel_params
-      params.require(:tv_channel).permit(:name, :bt, :freeview, :sky, :virgin, :youview, :rights_held, :weblink, :hd)
+      params.require(:tv_channel).permit(:name, :bt, :freeview, :sky, :virgin, :youview, :rights_held, :weblink, :hd, :freesat)
     end
 end

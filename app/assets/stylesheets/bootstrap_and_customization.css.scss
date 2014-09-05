@@ -34,3 +34,38 @@
 	background-color: #003366;
 	color: white;
 }
+
+/*----------------------------------------------------------------------------- 
+=TV-Nav-pills
+-----------------------------------------------------------------------------*/
+
+.tv-pills {
+	margin-top: -13px;
+}
+
+
+.tv-pills > .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+  background-color: inherit;
+  border-bottom: 6px #003366 solid;
+  color: #003366;
+  font-weight: bold;
+}
+
+.tv-pills > .nav-pills > li > a, .nav-pills > li.active > a:hover {
+  background-color: inherit;
+  color: #003366;
+}
+
+.tv-pills > .nav-pills > li > a:hover  {
+  background-color: inherit;
+  border-bottom: 6px #003366 solid;
+  color: #003366;
+  font-weight: bold;
+}
+
+.tv-pills > .nav-pills > li > a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
