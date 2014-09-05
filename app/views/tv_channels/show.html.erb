@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tv_channel.name %>
+</p>
+
+<p>
+  <strong>Bt:</strong>
+  <%= @tv_channel.bt %>
+</p>
+
+<p>
+  <strong>Freeview:</strong>
+  <%= @tv_channel.freeview %>
+</p>
+
+<p>
+  <strong>Sky:</strong>
+  <%= @tv_channel.sky %>
+</p>
+
+<p>
+  <strong>Virgin:</strong>
+  <%= @tv_channel.virgin %>
+</p>
+
+<p>
+  <strong>Youview:</strong>
+  <%= @tv_channel.youview %>
+</p>
+
+<p>
+  <strong>Rights held:</strong>
+  <%= @tv_channel.rights_held %>
+</p>
+
+<p>
+  <strong>Weblink:</strong>
+  <%= @tv_channel.weblink %>
+</p>
+
+<p>
+  <strong>Hd:</strong>
+  <%= @tv_channel.hd %>
+</p>
+
+<%= link_to 'Edit', edit_tv_channel_path(@tv_channel) %> |
+<%= link_to 'Back', tv_channels_path %>

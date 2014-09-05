@@ -1,0 +1,19 @@
+<%= simple_form_for(@tv_channel) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :bt %>
+    <%= f.input :freeview %>
+    <%= f.input :sky %>
+    <%= f.input :virgin %>
+    <%= f.input :youview %>
+    <%= f.input :rights_held %>
+    <%= f.input :weblink %>
+    <%= f.input :hd %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

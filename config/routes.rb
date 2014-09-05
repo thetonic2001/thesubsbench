@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :tv_channels
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'profile/show'

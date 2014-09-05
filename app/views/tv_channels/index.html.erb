@@ -1,0 +1,41 @@
+<h1>Listing tv_channels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Bt</th>
+      <th>Freeview</th>
+      <th>Sky</th>
+      <th>Virgin</th>
+      <th>Youview</th>
+      <th>Rights held</th>
+      <th>Weblink</th>
+      <th>Hd</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tv_channels.each do |tv_channel| %>
+      <tr>
+        <td><%= tv_channel.name %></td>
+        <td><%= tv_channel.bt %></td>
+        <td><%= tv_channel.freeview %></td>
+        <td><%= tv_channel.sky %></td>
+        <td><%= tv_channel.virgin %></td>
+        <td><%= tv_channel.youview %></td>
+        <td><%= tv_channel.rights_held %></td>
+        <td><%= tv_channel.weblink %></td>
+        <td><%= tv_channel.hd %></td>
+        <td><%= link_to 'Show', tv_channel %></td>
+        <td><%= link_to 'Edit', edit_tv_channel_path(tv_channel) %></td>
+        <td><%= link_to 'Destroy', tv_channel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tv channel', new_tv_channel_path %>

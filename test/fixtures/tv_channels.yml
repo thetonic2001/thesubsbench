@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  bt: 1
+  freeview: 1
+  sky: 1
+  virgin: 1
+  youview: 1
+  rights_held: MyText
+  weblink: MyString
+  hd: false
+
+two:
+  name: MyString
+  bt: 1
+  freeview: 1
+  sky: 1
+  virgin: 1
+  youview: 1
+  rights_held: MyText
+  weblink: MyString
+  hd: false
